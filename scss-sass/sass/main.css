@@ -1,0 +1,13 @@
+.menu {
+  float: right;
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  display: inline-block;
+}
+.menu a {
+  text-decoration: none;
+}/*# sourceMappingURL=main.css.map */
