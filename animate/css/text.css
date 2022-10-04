@@ -1,0 +1,83 @@
+.text{
+    text-align: center;
+    margin: 50px 0;
+    font-size: 24px;
+    font-family: sans-serif
+}
+
+.text_1{
+    animation-name: anim-1;
+    animation-duration: 3s;
+}
+
+.text_2{
+    animation: anim-2;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: 3; */
+    /* animation-direction: alternate; */
+}
+
+.text_3{
+    margin-top: 100px;
+    animation-name: anim-3;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+@keyframes anim-1 {
+    0%{
+        transform: translateX(-3000px);
+    }
+
+    50%{
+        transform: translateX(200px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes anim-2 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(3);
+    }
+}
+
+@keyframes anim-3 {
+    from,
+    60%,
+    75%,
+    90%,
+    to{
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60%{
+        opacity: 1;
+        transform: translate3d(0 ,25px, 0);
+    }
+
+    75%{
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90%{
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
