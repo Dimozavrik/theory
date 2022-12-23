@@ -1,0 +1,35 @@
+#wrapper *{
+    margin: 20px;
+}
+
+.text p{
+    font-size: 24px;
+}
+
+img ~ p{
+    color: red;
+}
+
+.list > li{
+    border: 1px solid #000;
+}
+
+input[type="text"]{
+    border: 5px solid #000;
+}
+
+a[href^="link"]{
+    color: orange;
+}
+
+img[src$=".png"]{
+    border: 2px solid purple;
+}
+
+p{
+    border: 2px solid greenyellow;
+}
+
+p:not(.item){
+    border-radius: 20px;
+}
